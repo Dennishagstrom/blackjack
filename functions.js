@@ -74,6 +74,7 @@ let dealer = {
 // player1.hit();
 // console.log(player1.getHand());
 
+console.log("HEI");
 
 dealer.drawCard();
 let dealerCards = dealer.hand;
