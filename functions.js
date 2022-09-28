@@ -79,16 +79,6 @@ console.log("HEI");
 console.log("NEW FEATURES HELLO")
 console.log("NEW FEATURES HELLO")
 console.log("NEW FEATURES HELLO")
-console.log("NEW FEATURES HELLO")
-console.log("NEW FEATURES HELLO")
-console.log("NEW FEATURES HELLO")
-console.log("NEW FEATURES HELLO")
-console.log("NEW FEATURES HELLO")
-console.log("NEW FEATURES HELLO")
-console.log("NEW FEATURES HELLO")
-console.log("NEW FEATURES HELLO")
-console.log("NEW FEATURES HELLO")
-console.log("NEW FEATURES HELLO")
 
 dealer.drawCard();
 let dealerCards = dealer.hand;
