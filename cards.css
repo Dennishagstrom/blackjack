@@ -1,0 +1,48 @@
+/*body {*/
+/*    padding: 2em;*/
+/*}*/
+/*ul {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*}*/
+.diamonds,
+.hearts {
+    color: red;
+}
+.card-back {
+    color: darkblue;
+}
+.color-4 .diamonds {
+    color: blue;
+}
+.color-4 .clubs {
+    color: green;
+}
+.suit {
+    text-align: center;
+}
+.pip,
+.suit-name {
+    font-size: 200%;
+}
+.tarot .pip { display: none; }
+.card {
+    display: inline-block;
+    font-family: 'Apple Symbols', serif;
+    font-size: 800%;
+    background-color: transparent;
+    border: 0px;
+}
+
+.cardRed {
+    color: red;
+}
+.cardBlack {
+    color: black;
+}
+.moved {
+    display: none;
+}
+.discarded {
+    color: grey;
+}

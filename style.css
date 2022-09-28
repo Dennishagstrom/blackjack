@@ -1,8 +1,25 @@
+body {
+    background: darkslategray;
+}
+
 #hit {
     visibility: hidden;
 }
 
 #playAgain {
+    visibility: hidden;
+}
+
+#playerValue, #dealerValue {
+    visibility: hidden;
+    color: white;
+}
+
+#newCard {
+    visibility: hidden;
+}
+
+#dealerNewCard {
     visibility: hidden;
 }
 
@@ -18,6 +35,8 @@
     text-align: center;
     border: 2px solid black;
     visibility: hidden;
+    position: relative;
+    margin: 20px;
 
 }
 
@@ -31,34 +50,42 @@
 
 #player {
     font-weight: bold;
-    background-color: pink;
+    background-color: black;
     padding: 10px;
-    border: 2px solid black;
-    margin: 10px
+    margin: 10px;
+    height: 130px;
+    border-radius: 8px;
+    color: white;
 
 }
 
 #dealer {
     font-weight: bold;
-    background-color: lightgray;
+    background-color: black;
+    color: white;
     padding: 10px;
-    border: 2px solid black;
     margin: 10px;
+    height: 130px;
+    border-radius: 8px;
 }
 
 #container  {
-    background-color: lightblue;
     border: 4px solid black;
     height: 50%;
     margin: 0 auto;
     padding: 0px 10px 10px 10px;
-    width: 50%
+    width: 40%;
+    background-color: black;
 }
 
 #buttons {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    margin-top: 1px;
+    text-align: center;
+    background: white;
+
 }
 
 .btn {
@@ -71,3 +98,35 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+
+#gameBoard {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#playerRealCards {
+    padding-top: 7px;
+    border: 2px solid white;
+    height: 210px;
+    text-align: center;
+}
+
+#dealerRealCards {
+    padding-top: 7px;
+    border: 2px solid white;
+    height: 210px;
+    text-align: center;
+}
+
+#dealerHeader {
+    margin-top: 35px;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+#playerHeader {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
