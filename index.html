@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="functions.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <div id="buttons">
+        <button class="btn btn-success" id="draw">Draw cards</button>
+        <button class="btn btn-primary" id="hit">Hit</button>
+        <button class="btn btn-danger" id="stand">Stand</button>
+        <button class="btn btn-warning" id="playAgain">Play again</button>
+    </div>
+
+    <h2>Player:</h2>
+    <div id="player">
+    <div id="cardsOfPlayer">
+        <p id="playerCards">Your cards are: <span id="addPlayerCards"></span></p>
+        <p id="newCard">Your new card is: <span id="hitCard"></span></p>
+        <p id="playerValue">Your total value is: <span id="playerTotalValue"></span></p>
+        <p id="blackJack"></p>
+    </div>
+    </div>
+
+    <h2>Dealer:</h2>
+    <div id="dealer">
+        <div id="cardsOfDealer">
+            <p id="dealerCards">Dealer cards are: <span id="addDealerCard"></span></p>
+            <p id="dealerValue">Dealer total value is: <span id="dealerTotalValue"></span></p>
+            <p id="dealerNewCard">Dealers new card is: <span id="dealerHitCard"></span></p>
+            <p id="dealerBlackJack"></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+#hit {
+    visibility: hidden;
+}
+
+#playAgain {
+    visibility: hidden;
+}
+
+#draw {
+    visibility: visible;
+    margin: 10px;
+}
+
+#blackJack {
+    color: white;
+    font-weight: bold;
+    background-color: limegreen;
+    text-align: center;
+    border: 2px solid black;
+    visibility: hidden;
+
+}
+
+#stand {
+    visibility: hidden;
+}
+
+#dealerNewCard {
+    visibility: hidden;
+}
+
+#player {
+    font-weight: bold;
+    background-color: pink;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px
+
+}
+
+#dealer {
+    font-weight: bold;
+    background-color: lightgray;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+#container  {
+    background-color: lightblue;
+    border: 4px solid black;
+    height: 50%;
+    margin: 0 auto;
+    padding: 0px 10px 10px 10px;
+    width: 50%
+}
+
+#buttons {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
