@@ -53,7 +53,10 @@ class Player {
 }
 
 const player1 = new Player("Dennis");
+const player2 = new Player("aawads")
 
+player2.drawCard();
+player2.hit();
 
 let dealer = {
     hand: [],
@@ -88,10 +91,8 @@ function colorOfCard(nameOfId, card) {
 
     if (card === "Hearts" || card === "Diamonds") {
         $(nameOfId).addClass("cardRed");
-        console.log("red");
     } else {
         $(nameOfId).addClass("cardBlack");
-        console.log("black");
     }
 }
 
@@ -174,7 +175,11 @@ $(document).ready(function() {
 
         $("p span#hitCard").text(`${newCard[0]} of ${newCard[1]}`);
         $("p span#playerTotalValue").text(player1.totalValue);
-        $("#playerRealCards").append($('<p class="card">' + newRealCard + '</p>'));
+        if(newCard[1] === "Hearts" || newCard[1] === "Diamonds") {
+            $("#playerRealCards").append($('<p class="card cardRed">' + newRealCard + '</p>'));
+        } else {
+            $("#playerRealCards").append($('<p class="card cardBlack">' + newRealCard + '</p>'));
+        }
         if (player1.busted === true) {
             $("#stand").css("visibility", "hidden");
             $("p span#addPlayerCards").text("BUST");
@@ -200,13 +205,20 @@ $(document).ready(function() {
             $("#hit").css("visibility", "hidden");
             $("#stand").css("visibility", "hidden");
             $("#playAgain").css("visibility", "visible");
+
                 while (dealer.totalValue < 17) {
                     dealer.hit();
                     let newCard = dealer.hand;
                     let newRealCard = dealer.realHand;
                     newRealCard = newRealCard[newRealCard.length - 1];
                     newCard = newCard[newCard.length - 1];
-                    $("#dealerRealCards").append($('<p class="card">' + newRealCard + '</p>'));
+                    console.log(newCard);
+
+                    if(newCard[1] === "Hearts" || newCard[1] === "Diamonds") {
+                        $("#dealerRealCards").append($('<p class="card cardRed">' + newRealCard + '</p>'));
+                    } else {
+                        $("#dealerRealCards").append($('<p class="card cardBlack">' + newRealCard + '</p>'));
+                    }
                     $("#dealerNewCard").css("visibility", "visible");
                     $("p span#dealerHitCard").text(`${newCard[0]} of ${newCard[1]}`);
                 }
@@ -402,7 +414,7 @@ function cardToSymbols(cardArr) {
                     cardSymbols = "🃎";
                     break;
                 case "Spades":
-                    cardSymbols = "🂾";
+                    cardSymbols = "🂮";
                     break;
                 default:
                     cardSymbols = "🃟";

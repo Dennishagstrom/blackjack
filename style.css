@@ -79,12 +79,12 @@ body {
 }
 
 #buttons {
-    border-bottom: 1px solid white;
     padding-bottom: 5px;
     margin-bottom: 10px;
     margin-top: 1px;
     text-align: center;
-    background: white;
+    background: black;
+    border-radius: 8px;
 
 }
 
